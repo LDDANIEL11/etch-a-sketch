@@ -15,14 +15,33 @@ body {
 .sketch-pad {
   background-color: rgb(207, 47, 47);
   border-radius: 9px;
-  margin-top: 200px;
+  margin: 10px 0px;
+  padding: 0px 50px;
+  box-shadow: inset 4px 10px 10px 4px #7e3030;
+}
+
+.container {
+  display: grid;
+  width: 700px;
+  height: 400px;
+  background-color: #e0e0e0;
+  border: #acacac solid;
+  margin: 20px 30px;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.cell {
+  border: #acacacfc solid thin;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .header div {
@@ -60,7 +79,7 @@ body {
   border: 3px solid rgb(203, 203, 5);
   border-radius: 50%;
   padding: 30px;
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 
 .pixel {
