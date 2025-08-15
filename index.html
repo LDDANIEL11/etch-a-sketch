@@ -12,6 +12,20 @@
     />
   </head>
   <body>
+    <div class="info">
+      <div>
+        <p>
+          I used someone elses codes for some part of this , but the other parts
+          such as the design and changing some js codes was
+          <a
+            href="https://github.com/LDDANIEL11"
+            target="_blank"
+            rel="noopener noreferrer"
+            >my job</a
+          >
+        </p>
+      </div>
+    </div>
     <div class="sketch-pad">
       <div class="header">
         <div class="txtL">Magic</div>
@@ -20,29 +34,36 @@
       </div>
       <div class="container"></div>
       <div class="btn-container">
-        <form class="btns">
+        <div class="btns">
           <div>
             <button onclick="changeColor('black')">Black</button>
           </div>
           <div>
-            <button onclick="changeColor('random')">Rainbow</button>
+            <button onclick="changeColor('gray')">Gray</button>
+          </div>
+          <div>
+            <button onclick="changeColor('rainbow')">Rainbow</button>
+          </div>
+          <div>
+            <button onclick="changeColor('#e0e0e0')">Eraser</button>
           </div>
           <div>
             <button onclick="resetContainer()">Reset</button>
           </div>
-        </form>
+        </div>
       </div>
-      <form class="pixel">
+      <div class="pixel">
         <input
           class="input"
           onchange="changeSize(this.value)"
           type="number"
           placeholder="2 to 100"
+          style="font-family: Calligraffitti"
         />
         <div>
           <button class="resize">Resize</button>
         </div>
-      </form>
+      </div>
     </div>
     <script src="assets/script.js"></script>
   </body>
