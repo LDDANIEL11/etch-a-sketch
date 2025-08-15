@@ -10,15 +10,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .info {
   display: flex;
-  text-align: center;
   font-family: Calligraffitti;
   font-size: 25px;
-  max-width: 100px;
-  margin-right: 2rem;
   padding: 0;
 }
 
