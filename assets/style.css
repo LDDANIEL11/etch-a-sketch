@@ -12,12 +12,27 @@ body {
   align-items: center;
 }
 
+.info {
+  display: flex;
+  text-align: center;
+  font-family: Calligraffitti;
+  font-size: 25px;
+  max-width: 100px;
+  margin-right: 2rem;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #36307e;
+}
+
 .sketch-pad {
-  background-color: rgb(207, 47, 47);
+  background-color: rgb(87, 47, 207);
   border-radius: 9px;
-  margin: 10px 0px;
+  margin: 5px 0px;
   padding: 0px 50px;
-  box-shadow: inset 4px 10px 10px 4px #7e3030;
+  box-shadow: inset 4px 10px 10px 4px #36307e;
 }
 
 .container {
@@ -41,11 +56,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 35px;
 }
 
 .header div {
-  margin: 10px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
 }
 
 .title {
@@ -75,11 +92,22 @@ body {
 .btns div button {
   font-family: Calligraffitti;
   font-weight: 700;
-  background-color: yellow;
-  border: 3px solid rgb(203, 203, 5);
+  font-size: 25px;
+  background-color: rgb(153, 0, 255);
+  border: 3px solid rgb(107, 5, 203);
   border-radius: 50%;
   padding: 30px;
   margin: 0px 10px;
+}
+
+.btns div button:hover {
+  background-color: rgb(107, 5, 203);
+  border-color: rgb(99, 5, 186);
+}
+
+.btns div button:active {
+  background-color: rgb(85, 4, 161);
+  border-color: rgb(77, 2, 147);
 }
 
 .pixel {
@@ -91,11 +119,15 @@ body {
 }
 
 .pixel button {
-  margin: 5px 0px;
+  margin-top: 5px;
   font-weight: 700;
-  font-size: 15px;
-  background-color: rgb(136, 136, 4);
+  font-size: 25px;
+  background-color: rgb(110, 4, 136);
   font-family: Calligraffitti;
-  border: 3px solid rgb(203, 203, 5);
+  border: 3px solid rgb(130, 5, 203);
+  border-radius: 9px;
+}
+
+.input {
   border-radius: 9px;
 }
