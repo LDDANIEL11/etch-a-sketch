@@ -1,16 +1,14 @@
 "use strict";
 
-//setting up the defualt
+//setting up the defualt color
 let color = "black";
 
-divCreation(16);
-
-function divCreation(size) {
-  let container = document.querySelector(".container");
+function boardCreator(size) {
+  const container = document.querySelector(".container");
   let squares = container.querySelectorAll("div");
-  squares.forEach((div) => div.remove());
-
-  //i dont know how these work technically found em somwhere else
+  squares.forEach((div) => {
+    div.remove();
+  });
   container.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
   container.style.gridTemplateRows = `repeat(${size} , 1fr)`;
 
@@ -18,9 +16,9 @@ function divCreation(size) {
   for (let i = 0; i < gridSize; i++) {
     let square = document.createElement("div");
     square.classList.add("cell");
-    container.style.backgroundColor = "#e0e0e0";
+    square.style.backgroundColor = "#e0e0e0";
     square.addEventListener("mouseover", colorSquare);
-    container.insertAdjacentElement("beforeend", square);
+    container.appendChild(square);
   }
 }
 
@@ -33,10 +31,10 @@ function changeColor(choice) {
 function colorSquare() {
   if (color == "rainbow") {
     this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-  } else if (color == "black") {
-    this.style.backgroundColor = "#000000";
   } else if (color == "gray") {
     this.style.backgroundColor = "gray";
+  } else if (color == "black") {
+    this.style.backgroundColor = "#000000";
   } else {
     this.style.backgroundColor = "#e0e0e0";
   }
@@ -47,16 +45,18 @@ function resetContainer() {
   let container = document.querySelector(".container");
   let squares = container.querySelectorAll("div");
   squares.forEach((div) => (div.style.backgroundColor = "#e0e0e0"));
-  divCreation(16);
+  boardCreator(16);
 }
 
 //function for changing grid numbers
 function changeSize(input) {
-  if (input >= 2 && input <= 100) {
-    divCreation(input);
+  if (input <= 100 && input >= 2) {
+    boardCreator(input);
   } else if (input > 100) {
-    alert("input error! too many squares !!!");
+    alert("Wrong input! too many squares!!!");
   } else {
-    alert("input error! too few squares !!!");
+    alert("Wrong input! too low squares!!!");
   }
 }
+
+boardCreator(16);
