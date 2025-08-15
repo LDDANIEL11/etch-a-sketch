@@ -5,19 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Calligraffitti"
+    />
   </head>
   <body>
-    <form>
-      <div class="btnContainer">
-        <button class="colors"></button>
+    <div class="sketch-pad">
+      <div class="header">
+        <div class="txtL">Magic</div>
+        <div class="title">Etch A Sketch</div>
+        <div class="txtR">Board</div>
       </div>
-    </form>
-    <div class="board"></div>
-    <form>
-      <div>
-        <button class="clean">Clean</button>
+      <div class="container"></div>
+      <div class="btn-container">
+        <form class="btns">
+          <div>
+            <button>Black</button>
+          </div>
+          <div>
+            <button>Gray</button>
+          </div>
+          <div>
+            <button>Rainbow</button>
+          </div>
+          <div>
+            <button>Erase</button>
+          </div>
+          <div>
+            <button>Reset</button>
+          </div>
+        </form>
       </div>
-    </form>
+      <form class="pixel">
+        <input type="number" placeholder="2 to 100" />
+        <div>
+          <button>Resize</button>
+        </div>
+      </form>
+    </div>
     <script src="assets/script.js"></script>
   </body>
 </html>
