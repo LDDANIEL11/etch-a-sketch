@@ -25,8 +25,12 @@ function divCreation(size) {
 function colorSquare() {
   if (color == "random") {
     this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-  } else {
+  } else if (color == "black") {
     this.style.backgroundColor = "#000000";
+  } else if (color == "gray") {
+    this.style.backgroundColor = "gray";
+  } else {
+    this.style.backgroundColor = "#e0e0e0";
   }
 }
 
