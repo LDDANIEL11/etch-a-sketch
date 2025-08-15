@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(81, 78, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  background-color: rgb(1, 65, 1);
+  padding: 350px 500px;
+  border: 5px solid rgb(1, 40, 1);
+}
+
+.clean {
+  padding: 5px 20px;
+  background-color: rgb(147, 145, 145);
+  border: 3px solid rgb(122, 120, 120);
+  border-radius: 8px;
+  margin: 15px;
+}
+.clean:hover {
+  background-color: rgb(122, 120, 120);
+  border-color: rgb(103, 101, 101);
+}
+
+.clean:active {
+  background-color: rgb(93, 91, 91);
+  border-color: rgb(78, 76, 76);
+}
+
+.colors {
+  background-color: white;
+  border: 3px solid rgb(224, 223, 223);
+  margin: 15px;
+  border-radius: 50%;
+  padding: 15px;
+}
