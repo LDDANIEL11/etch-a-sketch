@@ -25,13 +25,7 @@
             <button onclick="changeColor('black')">Black</button>
           </div>
           <div>
-            <button onclick="changeColor('gray')">Gray</button>
-          </div>
-          <div>
             <button onclick="changeColor('random')">Rainbow</button>
-          </div>
-          <div>
-            <button onclick="changeColor('#e0e0e0')">Erase</button>
           </div>
           <div>
             <button onclick="resetContainer()">Reset</button>
@@ -39,9 +33,14 @@
         </form>
       </div>
       <form class="pixel">
-        <input type="number" placeholder="2 to 100" />
+        <input
+          class="input"
+          onchange="changeSize(this.value)"
+          type="number"
+          placeholder="2 to 100"
+        />
         <div>
-          <button>Resize</button>
+          <button class="resize">Resize</button>
         </div>
       </form>
     </div>
